@@ -1,0 +1,134 @@
+:root{
+--cor1: #222621;
+--cor2: #0C0D0B;
+--cor3: #8C8A80;
+--cor4: #59564F;
+--cor5: #D9D0C7;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor2)
+}
+
+main {
+    color: var(--cor5);
+    display: block;
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: var(--cor1);
+    border-radius: 20px;
+    justify-items: center;
+    padding: 40px;
+    font-family: 'inter';
+    line-height: 2em;
+}
+
+#foto{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-weight: 700;
+}
+h3 {
+    font-weight: 400;
+    font-size: 1em;
+    color: #8C8A80;
+}
+h4 {
+    font-weight: 200;
+}
+
+input {
+    display: block;
+}
+.wrapper{
+    position: fixed;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .wrapper2{
+    position: fixed;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .wrapper3{
+    position: fixed;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: var(--cor5);
+    border: 2px solid var(--cor4);
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--cor4);
+    transition: all .35s;
+  }
+  
+  a:hover {
+    color: var(--cor2);
+  }
+
+  a:hover .icon {
+    filter: invert(0.1);
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+
+  .icon {
+    height: 30px;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    filter: invert(0.8);
+  }
+
